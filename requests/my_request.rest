@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "SQL query is handy.",
+    "important": true
+}
+
+###
+GET http://localhost:3001/api/notes/1
