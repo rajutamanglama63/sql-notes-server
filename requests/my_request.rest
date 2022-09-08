@@ -1,8 +1,9 @@
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmlAMTIzIiwiaWQiOjIsImlhdCI6MTY2MjYyNzg0Mn0.ch5BslXxI_NNdryZhB7w5S4_MFdYENsdrSAZr7pC4Hc
 
 {
-    "content": "SQL query is handy.",
+    "content": "new note by Hari.",
     "important": true
 }
 
@@ -15,8 +16,8 @@ Content-Type: application/json; charset=utf-8
 
 
 {
-    "username":"Raaaam",
-    "name":"Ram"
+    "username":"hari@123",
+    "name":"Hari"
 }
 
 
@@ -25,6 +26,6 @@ POST http://localhost:3001/api/login/
 Content-Type: application/json; charset=utf-8
 
 {
-"username": "Raaaam" , 
+"username": "hari@123",
 "password":"secret"
 }
