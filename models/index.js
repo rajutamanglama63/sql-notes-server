@@ -1,7 +1,13 @@
-const Note = require("./note");
+const Note = require("./Note");
+const User = require("./User")
 
-Note.sync();
+User.hasMany(Note)
+Note.belongsTo(User)
+Note.sync({ alter: true })
+User.sync({ alter: true })
+
 
 module.exports = {
   Note,
+  User,
 };
