@@ -11,13 +11,20 @@ GET http://localhost:3001/api/notes/
 
 ###
 POST http://localhost:3001/api/users/
-content-type: application/json;
+Content-Type: application/json; charset=utf-8
+
 
 {
-    "username": "@ram",
-    "name": "Ram"
+    "username":"Raaaam",
+    "name":"Ram"
 }
 
 
 ###
-POST http://localhost:3001/api/login
+POST http://localhost:3001/api/login/
+Content-Type: application/json; charset=utf-8
+
+{
+"username": "Raaaam" , 
+"password":"secret"
+}
