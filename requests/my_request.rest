@@ -8,3 +8,16 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3001/api/notes/
+
+###
+POST http://localhost:3001/api/users/
+content-type: application/json;
+
+{
+    "username": "@ram",
+    "name": "Ram"
+}
+
+
+###
+POST http://localhost:3001/api/login
