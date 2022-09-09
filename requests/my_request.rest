@@ -1,10 +1,10 @@
 POST http://localhost:3001/api/notes
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmlAMTIzIiwiaWQiOjEsImlhdCI6MTY2MjYyODY4NX0.IphKBnjxOJA-E9goluLGlYzNIs4wkhtZEjY5f6rJAC0
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmliYWhhZHVyIiwiaWQiOjEsImlhdCI6MTY2MjcxNzE0Mn0.nu2Peja7zqb2YqawIUGzU7im5KK9MfkNQBU-cZjX0n0
 
 {
-    "content": "pollution dherai vo",
-    "important": false
+    "content": "new note",
+    "important": true
 }
 
 ###
@@ -16,8 +16,8 @@ Content-Type: application/json; charset=utf-8
 
 
 {
-    "username":"hari@123",
-    "name":"Hari"
+    "username":"sujanc",
+    "name":"sujan"
 }
 
 
@@ -26,6 +26,15 @@ POST http://localhost:3001/api/login/
 Content-Type: application/json; charset=utf-8
 
 {
-"username": "hari@123",
+"username": "haribahadur",
 "password":"secret"
+}
+
+###
+PUT http://localhost:3001/api/users/madanbahadur
+Content-Type: application/json; charset=utf-8
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmliYWhhZHVyIiwiaWQiOjEsImlhdCI6MTY2MjcxOTkzMX0.nzxHVkCHGKk6RFBWhaLpE4m1-1M0rglUpI4vnIFzNDE
+
+{
+    "disabled":false
 }
